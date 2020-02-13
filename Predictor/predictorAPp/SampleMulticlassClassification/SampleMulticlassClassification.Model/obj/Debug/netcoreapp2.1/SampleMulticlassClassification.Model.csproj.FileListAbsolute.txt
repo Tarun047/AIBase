@@ -1,0 +1,9 @@
+/home/tarun/AIBase/Predictor/predictorAPp/SampleMulticlassClassification/SampleMulticlassClassification.Model/bin/Debug/netcoreapp2.1/MLModel.zip
+/home/tarun/AIBase/Predictor/predictorAPp/SampleMulticlassClassification/SampleMulticlassClassification.Model/bin/Debug/netcoreapp2.1/SampleMulticlassClassification.Model.deps.json
+/home/tarun/AIBase/Predictor/predictorAPp/SampleMulticlassClassification/SampleMulticlassClassification.Model/bin/Debug/netcoreapp2.1/SampleMulticlassClassification.Model.dll
+/home/tarun/AIBase/Predictor/predictorAPp/SampleMulticlassClassification/SampleMulticlassClassification.Model/bin/Debug/netcoreapp2.1/SampleMulticlassClassification.Model.pdb
+/home/tarun/AIBase/Predictor/predictorAPp/SampleMulticlassClassification/SampleMulticlassClassification.Model/obj/Debug/netcoreapp2.1/SampleMulticlassClassification.Model.csprojAssemblyReference.cache
+/home/tarun/AIBase/Predictor/predictorAPp/SampleMulticlassClassification/SampleMulticlassClassification.Model/obj/Debug/netcoreapp2.1/SampleMulticlassClassification.Model.AssemblyInfoInputs.cache
+/home/tarun/AIBase/Predictor/predictorAPp/SampleMulticlassClassification/SampleMulticlassClassification.Model/obj/Debug/netcoreapp2.1/SampleMulticlassClassification.Model.AssemblyInfo.cs
+/home/tarun/AIBase/Predictor/predictorAPp/SampleMulticlassClassification/SampleMulticlassClassification.Model/obj/Debug/netcoreapp2.1/SampleMulticlassClassification.Model.dll
+/home/tarun/AIBase/Predictor/predictorAPp/SampleMulticlassClassification/SampleMulticlassClassification.Model/obj/Debug/netcoreapp2.1/SampleMulticlassClassification.Model.pdb

@@ -1,0 +1,11 @@
+/home/tarun/AIBase/Predictor/predictorAPp/bin/Debug/netcoreapp3.1/predictorAPp
+/home/tarun/AIBase/Predictor/predictorAPp/bin/Debug/netcoreapp3.1/predictorAPp.deps.json
+/home/tarun/AIBase/Predictor/predictorAPp/bin/Debug/netcoreapp3.1/predictorAPp.runtimeconfig.json
+/home/tarun/AIBase/Predictor/predictorAPp/bin/Debug/netcoreapp3.1/predictorAPp.runtimeconfig.dev.json
+/home/tarun/AIBase/Predictor/predictorAPp/bin/Debug/netcoreapp3.1/predictorAPp.dll
+/home/tarun/AIBase/Predictor/predictorAPp/bin/Debug/netcoreapp3.1/predictorAPp.pdb
+/home/tarun/AIBase/Predictor/predictorAPp/obj/Debug/netcoreapp3.1/predictorAPp.csprojAssemblyReference.cache
+/home/tarun/AIBase/Predictor/predictorAPp/obj/Debug/netcoreapp3.1/predictorAPp.AssemblyInfoInputs.cache
+/home/tarun/AIBase/Predictor/predictorAPp/obj/Debug/netcoreapp3.1/predictorAPp.AssemblyInfo.cs
+/home/tarun/AIBase/Predictor/predictorAPp/obj/Debug/netcoreapp3.1/predictorAPp.dll
+/home/tarun/AIBase/Predictor/predictorAPp/obj/Debug/netcoreapp3.1/predictorAPp.pdb

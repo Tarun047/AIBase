@@ -1,0 +1,107 @@
+api,description
+get /containers/json ,List containers
+post /containers/create ,Create a container
+get /containers/{id}/json ,Inspect a container
+get /containers/{id}/top ,List processes running inside a container
+get /containers/{id}/logs ,Get container logs
+get /containers/{id}/changes ,Get changes on a container’s filesystem
+get /containers/{id}/export ,Export a container
+get /containers/{id}/stats ,Get container stats based on resource usage
+post /containers/{id}/resize ,Resize a container TTY
+post /containers/{id}/start ,Start a container
+post /containers/{id}/stop ,Stop a container
+post /containers/{id}/restart ,Restart a container
+post /containers/{id}/kill ,Kill a container
+post /containers/{id}/update ,Update a container
+post /containers/{id}/rename ,Rename a container
+post /containers/{id}/pause ,Pause a container
+post /containers/{id}/unpause ,Unpause a container
+post /containers/{id}/attach ,Attach to a container
+get /containers/{id}/attach/ws ,Attach to a container via a websocket
+post /containers/{id}/wait ,Wait for a container
+delete /containers/{id} ,Remove a container
+head /containers/{id}/archive ,Get information about files in a container
+get /containers/{id}/archive ,Get an archive of a filesystem resource in a container
+put /containers/{id}/archive ,Extract an archive of files or folders to a directory in a container
+post /containers/prune ,Delete stopped containers
+get /images/json ,List Images
+post /build ,Build an image
+post /build/prune ,Delete builder cache
+post /images/create ,Create an image
+get /images/{name}/json ,Inspect an image
+get /images/{name}/history ,Get the history of an image
+post /images/{name}/push ,Push an image
+post /images/{name}/tag ,Tag an image
+delete /images/{name} ,Remove an image
+get /images/search ,Search images
+post /images/prune ,Delete unused images
+post /auth ,Check auth configuration
+get /info ,Get system information
+get /version ,Get version
+get /_ping ,Ping
+head /_ping ,Ping
+post /commit ,Create a new image from a container
+get /events ,Monitor events
+get /system/df ,Get data usage information
+get /images/{name}/get ,Export an image
+get /images/get ,Export several images
+post /images/load ,Import images
+post /containers/{id}/exec ,Create an exec instance
+post /exec/{id}/start ,Start an exec instance
+post /exec/{id}/resize ,Resize an exec instance
+get /exec/{id}/json ,Inspect an exec instance
+get /volumes ,List volumes
+post /volumes/create ,Create a volume
+get /volumes/{name} ,Inspect a volume
+delete /volumes/{name} ,Remove a volume
+post /volumes/prune ,Delete unused volumes
+get /networks ,List networks
+get /networks/{id} ,Inspect a network
+delete /networks/{id} ,Remove a network
+post /networks/create ,Create a network
+post /networks/{id}/connect ,Connect a container to a network
+post /networks/{id}/disconnect ,Disconnect a container from a network
+post /networks/prune ,Delete unused networks
+get /plugins ,List plugins
+get /plugins/privileges ,Get plugin privileges
+post /plugins/pull ,Install a plugin
+get /plugins/{name}/json ,Inspect a plugin
+delete /plugins/{name} ,Remove a plugin
+post /plugins/{name}/enable ,Enable a plugin
+post /plugins/{name}/disable ,Disable a plugin
+post /plugins/{name}/upgrade ,Upgrade a plugin
+post /plugins/create ,Create a plugin
+post /plugins/{name}/push ,Push a plugin
+post /plugins/{name}/set ,Configure a plugin
+get /nodes ,List nodes
+get /nodes/{id} ,Inspect a node
+delete /nodes/{id} ,Delete a node
+post /nodes/{id}/update ,Update a node
+get /swarm ,Inspect swarm
+post /swarm/init ,Initialize a new swarm
+post /swarm/join ,Join an existing swarm
+post /swarm/leave ,Leave a swarm
+post /swarm/update ,Update a swarm
+get /swarm/unlockkey ,Get the unlock key
+post /swarm/unlock ,Unlock a locked manager
+get /services ,List services
+post /services/create ,Create a service
+get /services/{id} ,Inspect a service
+delete /services/{id} ,Delete a service
+post /services/{id}/update ,Update a service
+get /services/{id}/logs ,Get service logs
+get /tasks ,List tasks
+get /tasks/{id} ,Inspect a task
+get /tasks/{id}/logs ,Get task logs
+get /secrets ,List secrets
+post /secrets/create ,Create a secret
+get /secrets/{id} ,Inspect a secret
+delete /secrets/{id} ,Delete a secret
+post /secrets/{id}/update ,Update a Secret
+get /configs ,List configs
+post /configs/create ,Create a config
+get /configs/{id} ,Inspect a config
+delete /configs/{id} ,Delete a config
+post /configs/{id}/update ,Update a Config
+get /distribution/{name}/json ,Get image information from the registry
+post /session ,Initialize interactive session

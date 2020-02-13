@@ -1,0 +1,107 @@
+﻿operation, path, request, response, description
+get ,/containers/json ,untitled ,ContainerSummary ,List containers
+post ,/containers/create ,ContainerConfig ,ContainerCreateResponse ,Create a container
+get ,/containers/{id}/json ,untitled ,ContainerInspectResponse ,Inspect a container
+get ,/containers/{id}/top ,untitled ,ContainerTopResponse ,List processes running inside a container
+get ,/containers/{id}/logs ,untitled ,string ,Get container logs
+get ,/containers/{id}/changes ,untitled ,array object ,Get changes on a container’s filesystem
+get ,/containers/{id}/export ,untitled ,untitled ,Export a container
+get ,/containers/{id}/stats ,untitled ,object ,Get container stats based on resource usage
+post ,/containers/{id}/resize ,untitled ,untitled ,Resize a container TTY
+post ,/containers/{id}/start ,untitled ,untitled ,Start a container
+post ,/containers/{id}/stop ,untitled ,untitled ,Stop a container
+post ,/containers/{id}/restart ,untitled ,untitled ,Restart a container
+post ,/containers/{id}/kill ,untitled ,untitled ,Kill a container
+post ,/containers/{id}/update ,Resources ,ContainerUpdateResponse ,Update a container
+post ,/containers/{id}/rename ,untitled ,untitled ,Rename a container
+post ,/containers/{id}/pause ,untitled ,untitled ,Pause a container
+post ,/containers/{id}/unpause ,untitled ,untitled ,Unpause a container
+post ,/containers/{id}/attach ,untitled ,untitled ,Attach to a container
+get ,/containers/{id}/attach/ws ,untitled ,untitled ,Attach to a container via a websocket
+post ,/containers/{id}/wait ,untitled ,ContainerWaitResponse ,Wait for a container
+delete ,/containers/{id} ,untitled ,untitled ,Remove a container
+head ,/containers/{id}/archive ,untitled ,untitled ,Get information about files in a container
+get ,/containers/{id}/archive ,untitled ,untitled ,Get an archive of a filesystem resource in a container
+put ,/containers/{id}/archive ,string ,untitled ,Extract an archive of files or folders to a directory in a container
+post ,/containers/prune ,untitled ,ContainerPruneResponse ,Delete stopped containers
+get ,/images/json ,untitled ,array ImageSummary ,List Images
+post ,/build ,string ,untitled ,Build an image
+post ,/build/prune ,untitled ,BuildPruneResponse ,Delete builder cache
+post ,/images/create ,string ,untitled ,Create an image
+get ,/images/{name}/json ,untitled ,Image ,Inspect an image
+get ,/images/{name}/history ,untitled ,array object ,Get the history of an image
+post ,/images/{name}/push ,untitled ,untitled ,Push an image
+post ,/images/{name}/tag ,untitled ,untitled ,Tag an image
+delete ,/images/{name} ,untitled ,array ImageDeleteResponseItem ,Remove an image
+get ,/images/search ,untitled ,array object ,Search images
+post ,/images/prune ,untitled ,ImagePruneResponse ,Delete unused images
+post ,/auth ,AuthConfig ,SystemAuthResponse ,Check auth configuration
+get ,/info ,untitled ,SystemInfo ,Get system information
+get ,/version ,untitled ,SystemVersionResponse ,Get version
+get ,/_ping ,untitled ,string ,Ping
+head ,/_ping ,untitled ,string ,Ping
+post ,/commit ,ContainerConfig ,IdResponse ,Create a new image from a container
+get ,/events ,untitled ,SystemEventsResponse ,Monitor events
+get ,/system/df ,untitled ,SystemDataUsageResponse ,Get data usage information
+get ,/images/{name}/get ,untitled ,string ,Export an image
+get ,/images/get ,untitled ,string ,Export several images
+post ,/images/load ,string ,untitled ,Import images
+post ,/containers/{id}/exec ,object ,IdResponse ,Create an exec instance
+post ,/exec/{id}/start ,object ,untitled ,Start an exec instance
+post ,/exec/{id}/resize ,untitled ,untitled ,Resize an exec instance
+get ,/exec/{id}/json ,untitled ,ExecInspectResponse ,Inspect an exec instance
+get ,/volumes ,untitled ,VolumeListResponse ,List volumes
+post ,/volumes/create ,VolumeConfig ,Volume ,Create a volume
+get ,/volumes/{name} ,untitled ,Volume ,Inspect a volume
+delete ,/volumes/{name} ,untitled ,untitled ,Remove a volume
+post ,/volumes/prune ,untitled ,VolumePruneResponse ,Delete unused volumes
+get ,/networks ,untitled ,array Network ,List networks
+get ,/networks/{id} ,untitled ,Network ,Inspect a network
+delete ,/networks/{id} ,untitled ,untitled ,Remove a network
+post ,/networks/create ,object ,NetworkCreateResponse ,Create a network
+post ,/networks/{id}/connect ,object ,untitled ,Connect a container to a network
+post ,/networks/{id}/disconnect ,object ,untitled ,Disconnect a container from a network
+post ,/networks/prune ,untitled ,NetworkPruneResponse ,Delete unused networks
+get ,/plugins ,untitled ,array Plugin ,List plugins
+get ,/plugins/privileges ,untitled ,array object ,Get plugin privileges
+post ,/plugins/pull ,array object ,untitled ,Install a plugin
+get ,/plugins/{name}/json ,untitled ,Plugin ,Inspect a plugin
+delete ,/plugins/{name} ,untitled ,Plugin ,Remove a plugin
+post ,/plugins/{name}/enable ,untitled ,untitled ,Enable a plugin
+post ,/plugins/{name}/disable ,untitled ,untitled ,Disable a plugin
+post ,/plugins/{name}/upgrade ,array object ,untitled ,Upgrade a plugin
+post ,/plugins/create ,string ,untitled ,Create a plugin
+post ,/plugins/{name}/push ,untitled ,untitled ,Push a plugin
+post ,/plugins/{name}/set ,array string ,untitled ,Configure a plugin
+get ,/nodes ,untitled ,array Node ,List nodes
+get ,/nodes/{id} ,untitled ,Node ,Inspect a node
+delete ,/nodes/{id} ,untitled ,untitled ,Delete a node
+post ,/nodes/{id}/update ,NodeSpec ,untitled ,Update a node
+get ,/swarm ,untitled ,Swarm ,Inspect swarm
+post ,/swarm/init ,object ,string ,Initialize a new swarm
+post ,/swarm/join ,object ,untitled ,Join an existing swarm
+post ,/swarm/leave ,untitled ,untitled ,Leave a swarm
+post ,/swarm/update ,SwarmSpec ,untitled ,Update a swarm
+get ,/swarm/unlockkey ,untitled ,UnlockKeyResponse ,Get the unlock key
+post ,/swarm/unlock ,object ,untitled ,Unlock a locked manager
+get ,/services ,untitled ,array Service ,List services
+post ,/services/create ,ServiceSpec ,ServiceCreateResponse ,Create a service
+get ,/services/{id} ,untitled ,Service ,Inspect a service
+delete ,/services/{id} ,untitled ,untitled ,Delete a service
+post ,/services/{id}/update ,ServiceSpec ,ServiceUpdateResponse ,Update a service
+get ,/services/{id}/logs ,untitled ,string ,Get service logs
+get ,/tasks ,untitled ,array Task ,List tasks
+get ,/tasks/{id} ,untitled ,Task ,Inspect a task
+get ,/tasks/{id}/logs ,untitled ,string ,Get task logs
+get ,/secrets ,untitled ,array Secret ,List secrets
+post ,/secrets/create ,SecretSpec ,IdResponse ,Create a secret
+get ,/secrets/{id} ,untitled ,Secret ,Inspect a secret
+delete ,/secrets/{id} ,untitled ,untitled ,Delete a secret
+post ,/secrets/{id}/update ,SecretSpec ,untitled ,Update a Secret
+get ,/configs ,untitled ,array Config ,List configs
+post ,/configs/create ,ConfigSpec ,IdResponse ,Create a config
+get ,/configs/{id} ,untitled ,Config ,Inspect a config
+delete ,/configs/{id} ,untitled ,untitled ,Delete a config
+post ,/configs/{id}/update ,ConfigSpec ,untitled ,Update a Config
+get ,/distribution/{name}/json ,untitled ,DistributionInspectResponse ,Get image information from the registry
+post ,/session ,untitled ,untitled ,Initialize interactive session

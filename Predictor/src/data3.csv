@@ -1,0 +1,107 @@
+endpoint,http_method,description
+/containers/json ,get ,List containers
+/containers/create ,post ,Create a container
+/containers/{id}/json ,get ,Inspect a container
+/containers/{id}/top ,get ,List processes running inside a container
+/containers/{id}/logs ,get ,Get container logs
+/containers/{id}/changes ,get ,Get changes on a container’s filesystem
+/containers/{id}/export ,get ,Export a container
+/containers/{id}/stats ,get ,Get container stats based on resource usage
+/containers/{id}/resize ,post ,Resize a container TTY
+/containers/{id}/start ,post ,Start a container
+/containers/{id}/stop ,post ,Stop a container
+/containers/{id}/restart ,post ,Restart a container
+/containers/{id}/kill ,post ,Kill a container
+/containers/{id}/update ,post ,Update a container
+/containers/{id}/rename ,post ,Rename a container
+/containers/{id}/pause ,post ,Pause a container
+/containers/{id}/unpause ,post ,Unpause a container
+/containers/{id}/attach ,post ,Attach to a container
+/containers/{id}/attach/ws ,get ,Attach to a container via a websocket
+/containers/{id}/wait ,post ,Wait for a container
+/containers/{id} ,delete ,Remove a container
+/containers/{id}/archive ,head ,Get information about files in a container
+/containers/{id}/archive ,get ,Get an archive of a filesystem resource in a container
+/containers/{id}/archive ,put ,Extract an archive of files or folders to a directory in a container
+/containers/prune ,post ,Delete stopped containers
+/images/json ,get ,List Images
+/build ,post ,Build an image
+/build/prune ,post ,Delete builder cache
+/images/create ,post ,Create an image
+/images/{name}/json ,get ,Inspect an image
+/images/{name}/history ,get ,Get the history of an image
+/images/{name}/push ,post ,Push an image
+/images/{name}/tag ,post ,Tag an image
+/images/{name} ,delete ,Remove an image
+/images/search ,get ,Search images
+/images/prune ,post ,Delete unused images
+/auth ,post ,Check auth configuration
+/info ,get ,Get system information
+/version ,get ,Get version
+/_ping ,get ,Ping
+/_ping ,head ,Ping
+/commit ,post ,Create a new image from a container
+/events ,get ,Monitor events
+/system/df ,get ,Get data usage information
+/images/{name}/get ,get ,Export an image
+/images/get ,get ,Export several images
+/images/load ,post ,Import images
+/containers/{id}/exec ,post ,Create an exec instance
+/exec/{id}/start ,post ,Start an exec instance
+/exec/{id}/resize ,post ,Resize an exec instance
+/exec/{id}/json ,get ,Inspect an exec instance
+/volumes ,get ,List volumes
+/volumes/create ,post ,Create a volume
+/volumes/{name} ,get ,Inspect a volume
+/volumes/{name} ,delete ,Remove a volume
+/volumes/prune ,post ,Delete unused volumes
+/networks ,get ,List networks
+/networks/{id} ,get ,Inspect a network
+/networks/{id} ,delete ,Remove a network
+/networks/create ,post ,Create a network
+/networks/{id}/connect ,post ,Connect a container to a network
+/networks/{id}/disconnect ,post ,Disconnect a container from a network
+/networks/prune ,post ,Delete unused networks
+/plugins ,get ,List plugins
+/plugins/privileges ,get ,Get plugin privileges
+/plugins/pull ,post ,Install a plugin
+/plugins/{name}/json ,get ,Inspect a plugin
+/plugins/{name} ,delete ,Remove a plugin
+/plugins/{name}/enable ,post ,Enable a plugin
+/plugins/{name}/disable ,post ,Disable a plugin
+/plugins/{name}/upgrade ,post ,Upgrade a plugin
+/plugins/create ,post ,Create a plugin
+/plugins/{name}/push ,post ,Push a plugin
+/plugins/{name}/set ,post ,Configure a plugin
+/nodes ,get ,List nodes
+/nodes/{id} ,get ,Inspect a node
+/nodes/{id} ,delete ,Delete a node
+/nodes/{id}/update ,post ,Update a node
+/swarm ,get ,Inspect swarm
+/swarm/init ,post ,Initialize a new swarm
+/swarm/join ,post ,Join an existing swarm
+/swarm/leave ,post ,Leave a swarm
+/swarm/update ,post ,Update a swarm
+/swarm/unlockkey ,get ,Get the unlock key
+/swarm/unlock ,post ,Unlock a locked manager
+/services ,get ,List services
+/services/create ,post ,Create a service
+/services/{id} ,get ,Inspect a service
+/services/{id} ,delete ,Delete a service
+/services/{id}/update ,post ,Update a service
+/services/{id}/logs ,get ,Get service logs
+/tasks ,get ,List tasks
+/tasks/{id} ,get ,Inspect a task
+/tasks/{id}/logs ,get ,Get task logs
+/secrets ,get ,List secrets
+/secrets/create ,post ,Create a secret
+/secrets/{id} ,get ,Inspect a secret
+/secrets/{id} ,delete ,Delete a secret
+/secrets/{id}/update ,post ,Update a Secret
+/configs ,get ,List configs
+/configs/create ,post ,Create a config
+/configs/{id} ,get ,Inspect a config
+/configs/{id} ,delete ,Delete a config
+/configs/{id}/update ,post ,Update a Config
+/distribution/{name}/json ,get ,Get image information from the registry
+/session ,post ,Initialize interactive session
